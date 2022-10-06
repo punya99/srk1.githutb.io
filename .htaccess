@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^index\.html$ / [NC,R,L]
+RewriteCond %{HTTP_HOST} !^(.*)\.srkimpex\.in$ [NC] 
+RewriteRule ^(.*)$ http://www.srkimpex.in/$1 [R=301,L]
